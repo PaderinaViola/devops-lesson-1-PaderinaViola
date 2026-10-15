@@ -1,0 +1,12 @@
+name: GitHub Actions Bash Demo
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - run: bash tests/run.sh
