@@ -3,7 +3,7 @@ name: GitHub Actions Bash Demo
 on:
   push:
     branches:
-      - 'main'
+      - 'ci/PaderinaViola'
 
 jobs:
   run-tests:
@@ -11,4 +11,5 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
-      - run: bash tests/run.sh
+      - run: bash python --version
+      - run: bash tests/test_greet.py
