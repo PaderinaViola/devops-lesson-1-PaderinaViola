@@ -6,8 +6,8 @@ def test_greet_default():
 
 
 def test_greet_name():
-    assert greet("Ada") == "Hello, Viola!"
+    assert greet("Viola") == "Hello, Viola!"
 
 
 def test_shout():
-    assert shout("Ada") == "HELLO, VIOLA!"
+    assert shout("Viola") == "HELLO, VIOLA!"
